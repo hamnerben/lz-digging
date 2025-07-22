@@ -95,9 +95,6 @@
                 <h2 class="text-3xl font-bold text-center mb-12">Project Gallery</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="images/img1.JPG" alt="Foundation Digging Project" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400';">
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
                         <img src="images/img1.JPG" alt="Utility Trenching" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400';">
                     </div>
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
@@ -111,6 +108,12 @@
                     </div>
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
                         <img src="images/img5.jpg" alt="Land Clearing" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400';">
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="images/img6.jpeg" alt="Foundation Digging Project" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400';">
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="images/img7.jpeg" alt="Foundation Digging Project" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400';">
                     </div>
                 </div>
             </div>
@@ -142,8 +145,8 @@
                             </p>
                         </div>
                     </div>
-                    <div>
-                         <form action="https://formspree.io/f/xnnzpabv" method="POST" class="bg-gray-700 p-8 rounded-lg shadow-lg">
+                    <div class="h-full">
+                         <form action="https://formspree.io/f/xnnzpabv" method="POST" class="bg-gray-700 p-8 rounded-lg shadow-lg h-full flex flex-col justify-between">
                             <div class="mb-4">
                                 <label for="name" class="block text-sm font-medium mb-2">Your Name</label>
                                 <input type="text" id="name" name="name" class="w-full bg-gray-800 border border-gray-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
@@ -152,9 +155,9 @@
                                 <label for="email" class="block text-sm font-medium mb-2">Your Email</label>
                                 <input type="email" id="email" name="email" class="w-full bg-gray-800 border border-gray-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                             </div>
-                            <div class="mb-4">
+                            <div class="mb-4 flex-grow flex flex-col">
                                 <label for="message" class="block text-sm font-medium mb-2">Message</label>
-                                <textarea id="message" name="message" rows="4" class="w-full bg-gray-800 border border-gray-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                                <textarea id="message" name="message" class="w-full bg-gray-800 border border-gray-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 flex-grow resize-none" required></textarea>
                             </div>
                             <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-500 transition duration-300">Send Message</button>
                         </form>
